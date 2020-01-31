@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://xml.netbeans.org/schema/Currency" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.0" targetNamespace="http://xml.netbeans.org/schema/Currency">
+
+<xs:element name="Currencies">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="CurrencyList" type="tns:Currency" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:complexType name="Currency">
+<xs:sequence>
+<xs:element name="Name" type="xs:string"/>
+<xs:element name="Rate" type="xs:double"/>
+<xs:element name="Base" type="xs:string"/>
+<xs:element name="LastUpdated" type="xs:date"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

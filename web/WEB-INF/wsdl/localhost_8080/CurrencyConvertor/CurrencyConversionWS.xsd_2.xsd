@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://DOCwebServices/" xmlns:ns1="http://xml.netbeans.org/schema/Currency" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://DOCwebServices/">
+
+<xs:import namespace="http://xml.netbeans.org/schema/Currency" schemaLocation="http://localhost:8080/CurrencyConvertor/CurrencyConversionWS?xsd=1"/>
+
+<xs:element name="CurrencyNotFoundException" type="tns:CurrencyNotFoundException"/>
+
+<xs:element name="ProviderNotAvailableException" type="tns:ProviderNotAvailableException"/>
+
+<xs:element name="getConversionRate" type="tns:getConversionRate"/>
+
+<xs:element name="getConversionRateResponse" type="tns:getConversionRateResponse"/>
+
+<xs:element name="getCurrencyCodes" type="tns:getCurrencyCodes"/>
+
+<xs:element name="getCurrencyCodesResponse" type="tns:getCurrencyCodesResponse"/>
+
+<xs:element name="listLatestCurrencyRates" type="tns:listLatestCurrencyRates"/>
+
+<xs:element name="listLatestCurrencyRatesResponse" type="tns:listLatestCurrencyRatesResponse"/>
+
+<xs:element name="listSavedCurrencies" type="tns:listSavedCurrencies"/>
+
+<xs:element name="listSavedCurrenciesResponse" type="tns:listSavedCurrenciesResponse"/>
+
+<xs:element name="saveCurrencyRate" type="tns:saveCurrencyRate"/>
+
+<xs:element name="saveCurrencyRateResponse" type="tns:saveCurrencyRateResponse"/>
+
+<xs:complexType name="getCurrencyCodes">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getCurrencyCodesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getConversionRate">
+<xs:sequence>
+<xs:element name="cur1" type="xs:string" minOccurs="0"/>
+<xs:element name="cur2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getConversionRateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CurrencyNotFoundException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listSavedCurrencies">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listSavedCurrenciesResponse">
+<xs:sequence>
+<xs:element name="return" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="CurrencyList" type="ns1:Currency" form="qualified" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveCurrencyRate">
+<xs:sequence>
+<xs:element name="curName" type="xs:string" minOccurs="0"/>
+<xs:element name="rate" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveCurrencyRateResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:Currency" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listLatestCurrencyRates">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listLatestCurrencyRatesResponse">
+<xs:sequence>
+<xs:element name="return" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ProviderNotAvailableException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

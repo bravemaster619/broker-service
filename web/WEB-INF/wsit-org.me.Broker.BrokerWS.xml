@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <definitions 
+ xmlns="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="BrokerWS" targetNamespace="http://Broker.me.org/" xmlns:tns="http://Broker.me.org/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:fi="http://java.sun.com/xml/ns/wsit/2006/09/policy/fastinfoset/service" xmlns:tcp="http://java.sun.com/xml/ns/wsit/2006/09/policy/soaptcp/service" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsrm="http://docs.oasis-open.org/ws-rx/wsrmp/200702"
+ >
+    <message name="listShares"/>
+    <message name="listSharesResponse"/>
+    <message name="buyShares"/>
+    <message name="buySharesResponse"/>
+    <message name="FileNotFoundException"/>
+    <message name="SearchForShares"/>
+    <message name="SearchForSharesResponse"/>
+    <message name="Greater_Shares_Than"/>
+    <message name="Greater_Shares_ThanResponse"/>
+    <message name="Get-Currency"/>
+    <message name="Get-CurrencyResponse"/>
+    <portType name="BrokerWS">
+        <operation name="listShares">
+            <input message="tns:listShares"/>
+            <output message="tns:listSharesResponse"/>
+        </operation>
+        <operation name="buyShares">
+            <input message="tns:buyShares"/>
+            <output message="tns:buySharesResponse"/>
+            <fault name="FileNotFoundException" message="tns:FileNotFoundException"/>
+        </operation>
+        <operation name="SearchForShares">
+            <input message="tns:SearchForShares"/>
+            <output message="tns:SearchForSharesResponse"/>
+            <fault name="FileNotFoundException" message="tns:FileNotFoundException"/>
+        </operation>
+        <operation name="Greater_Shares_Than">
+            <input message="tns:Greater_Shares_Than"/>
+            <output message="tns:Greater_Shares_ThanResponse"/>
+            <fault name="FileNotFoundException" message="tns:FileNotFoundException"/>
+        </operation>
+        <operation name="Get-Currency">
+            <input message="tns:Get-Currency"/>
+            <output message="tns:Get-CurrencyResponse"/>
+        </operation>
+    </portType>
+    <binding name="BrokerWSPortBinding" type="tns:BrokerWS">
+        <wsp:PolicyReference URI="#BrokerWSPortBindingPolicy"/>
+        <operation name="listShares">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="buyShares">
+            <input/>
+            <output/>
+            <fault name="FileNotFoundException"/>
+        </operation>
+        <operation name="SearchForShares">
+            <input/>
+            <output/>
+            <fault name="FileNotFoundException"/>
+        </operation>
+        <operation name="Greater_Shares_Than">
+            <input/>
+            <output/>
+            <fault name="FileNotFoundException"/>
+        </operation>
+        <operation name="Get-Currency">
+            <input/>
+            <output/>
+        </operation>
+    </binding>
+    <service name="BrokerWS">
+        <port name="BrokerWSPort" binding="tns:BrokerWSPortBinding"/>
+    </service>
+    <wsp:Policy wsu:Id="BrokerWSPortBindingPolicy">
+        <wsp:ExactlyOne>
+            <wsp:All>
+                <wsam:Addressing wsp:Optional="false"/>
+                <wsrm:RMAssertion/>
+            </wsp:All>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+</definitions>

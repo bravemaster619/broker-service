@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/Users/GJ/Desktop/BrokerServiceSOAP/src/java/Shares.xsd" uri="src/conf/xml-resources/jaxb/BroReq/Shares.xsd"/>
+    <system systemId="http://localhost:8080/CurrencyConvertor/CurrencyConversionWSService?wsdl" uri="src/conf/xml-resources/web-service-references/CurrencyConversionWSService/wsdl/localhost_8080/CurrencyConvertor/CurrencyConversionWSService.wsdl"/>
+    <system systemId="http://localhost:8080/CurrencyConvertor/CurrencyConversionWSService?xsd=1" uri="src/conf/xml-resources/web-service-references/CurrencyConversionWSService/wsdl/localhost_8080/CurrencyConvertor/CurrencyConversionWSService.xsd_1.xsd"/>
+    <system systemId="file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/src/java/Shares.xsd" uri="src/conf/xml-resources/jaxb/BroReq/Shares.xsd"/>
+    <system systemId="http://localhost:8080/CurrencyConvertor/CurrencyConversionWS?wsdl" uri="src/conf/xml-resources/web-service-references/CurrencyConversionWSService/wsdl/localhost_8080/CurrencyConvertor/CurrencyConversionWS.wsdl"/>
+    <system systemId="http://localhost:8080/CurrencyConvertor/CurrencyConversionWS?xsd=1" uri="src/conf/xml-resources/web-service-references/CurrencyConversionWSService/wsdl/localhost_8080/CurrencyConvertor/CurrencyConversionWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/CurrencyConvertor/CurrencyConversionWS?xsd=2" uri="src/conf/xml-resources/web-service-references/CurrencyConversionWSService/wsdl/localhost_8080/CurrencyConvertor/CurrencyConversionWS.xsd_2.xsd"/>
+</catalog>

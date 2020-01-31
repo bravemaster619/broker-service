@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/nbproject/xml_binding_build.xml</file>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/src/java/org/me/Broker/provider/CurrencyExchangeProvider.java</file>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/src/java/Shares.xsd</file>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/src/java/org/me/Broker/provider/SharePriceProvider.java</file>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/src/java/org/me/Broker/exception/ProviderNotAvailableException.java</file>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/test/org/me/Broker/DefaultSharePriceProviderTest.java</file>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/build/generated-sources/jax-ws/org/me/Broker/currency/GetConversionRateResponse.java</file>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/build/generated-sources/jax-ws/org/me/Broker/currency/CurrencyConversionWS.java</file>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/src/java/org/me/Broker/exception/CompanyNotFoundException.java</file>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/src/conf/xml-resources/jaxb/BroReq/Shares.xsd</file>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/build/generated-sources/jaxb/Broker/SharePrice.java</file>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/build/generated-sources/jaxb/Broker/CompanyShares.java</file>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/src/java/org/me/Broker/InitShares.java</file>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/src/java/SharesP.xml</file>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/src/java/SharesGR.xml</file>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/build/generated-sources/jaxb/Broker/SharesType.java</file>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/src/java/org/me/Broker/BrokerWS.java</file>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/src/java/Shares.xml</file>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/src/java/org/me/Broker/exception/CurrencyNotFoundException.java</file>
+            <file>file:/E:/freelancer/qtr/ghanim/BrokerServiceSOAP/src/java/org/me/Broker/provider/RestApiSharePriceProvider.java</file>
+        </group>
+    </open-files>
+</project-private>
